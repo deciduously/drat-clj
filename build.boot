@@ -12,7 +12,6 @@
                  [org.clojure/tools.nrepl "0.2.12"]
                  [weasel "0.7.0"]
                  [binaryage/devtools "0.9.7" :scope "test"]
-                 [binaryage/dirac "RELEASE" :scope "test"]
                  [powerlaces/boot-cljs-devtools "0.2.0" :scope "test"]
                  [reagent "0.8.0-alpha2"]
                  [re-frame "0.10.3-alpha1"]])
@@ -21,7 +20,7 @@
          '[pandeiro.boot-http :refer [serve]]
          '[adzerk.boot-reload :refer [reload]]
          '[adzerk.boot-cljs-repl :refer [cljs-repl-env start-repl]]
-         '[powerlaces.boot-cljs-devtools :refer [cljs-devtools dirac]])
+         '[powerlaces.boot-cljs-devtools :refer [cljs-devtools]])
 
 (deftask dev
   "Launch Immediate Feedback Development Environment"
@@ -31,7 +30,6 @@
    (watch)
    (reload)
    (cljs-devtools)
-   (dirac)
    (cljs-repl-env)
    (cljs)
    (target :dir #{"target"})))
