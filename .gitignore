@@ -1,3 +1,4 @@
+bin/
 .nrepl*
 /target/
 /out/

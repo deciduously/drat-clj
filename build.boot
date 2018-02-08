@@ -2,7 +2,7 @@
  :source-paths #{"src/cljs"}
  :resource-paths #{"resource"}
 
- :dependencies '[[org.clojure/clojure "1.9.0-RC1"]
+ :dependencies '[[org.clojure/clojure "1.9.0"]
                  [org.clojure/clojurescript "1.9.946"]
                  [adzerk/boot-cljs "2.1.4" :scope "test" ]
                  [pandeiro/boot-http "0.8.3"]
@@ -14,7 +14,7 @@
                  [binaryage/devtools "0.9.7" :scope "test"]
                  [powerlaces/boot-cljs-devtools "0.2.0" :scope "test"]
                  [reagent "0.8.0-alpha2"]
-                 [re-frame "0.10.3-alpha1"]])
+                 [re-frame "0.10.4"]])
 
 (require '[adzerk.boot-cljs :refer [cljs]]
          '[pandeiro.boot-http :refer [serve]]
